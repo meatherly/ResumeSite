@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mysite</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="header">
+		<div class="head-wrap">
+			<div id="logo" class="clear">
+			<div id="me-image" class="thumbnail clear">	
+				    
+				      <img src="assets/profilepic.jpg"  alt="">
+				  
+				    <div id="pp_Comments" class="caption">
+				    	<a href="https://github.com/meatherly"><img src="assets/github.png" /></a>
+				    	<a href="https://twitter.com/meatherly"><img src="assets/twitter.png" /></a>
+				    	<a href="http://www.linkedin.com/in/michaeleatherly"><img src="assets/linkedin.png" /></a>
+				    	<a href="http://www.facebook.com/meatherly"><img src="assets/facebook.png" /></a>				    	
+				    </div>				  
+			</div>
+		<div id="logo-text">
+			<div class="header-font">Michael Eatherly</div>
+			<div class="header-subfont">{developer}</div>
+			<div id="navbar" >
+			<ul class="nav nav-pills">
+				<li><a href="#" class="btn btn-info">Contact Me</a></li>				
+			</ul>
+		</div>
+		</div>
+		</div>
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+	<div id="body" class="wrapper clear">
+<%= yield %>
+</div>
+<div id="footer">
+
+</div>
+</body>
+</html>
